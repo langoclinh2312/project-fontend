@@ -1,0 +1,263 @@
+/*<-----------------------------------3.1 project_list_page_content--------------------------------------------->*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* banner */
+
+.banner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.img-banner {
+    background-image: url(../../images/banner_form.jpg);
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+    height: 800px;
+    line-height: 38px;
+    background-color: #0f172b;
+    background-position: center;
+    background-size: cover;
+    min-height: 1px;
+    float: left;
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.img-banner::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #0f172b;
+    z-index: -2;
+    opacity: 0.59;
+}
+
+.slide-text h1 {
+    animation-delay: 0.6s;
+    color: #fff;
+    font-size: 120px;
+    margin-bottom: 30px;
+    line-height: 120px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+}
+
+.big-text {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    font-size: 300px;
+    transform: translateX(-50%);
+    line-height: 60px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    opacity: 0.11;
+    z-index: -1;
+}
+
+.banner .img-banner ul {
+    justify-content: center;
+}
+
+.banner .img-banner li {
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 20px;
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+.banner .img-banner li a {
+    color: #fea116;
+}
+
+.banner .img-banner li i {
+    font-size: 25px;
+}
+
+/* main */
+
+.contact-section {
+    padding-top: 125px;
+    padding-bottom: 45px;
+}
+
+/* title */
+
+.title-top {
+    color: #fea116;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-title h1 {
+    color: #0f172b;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+.contact-section .contact-info-boxes {
+    margin-top: 40px;
+}
+
+.contact-section .contact-info-box {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 30px 25px 25px 90px;
+    font-size: 18px;
+    border: 1px solid #dedede;
+    line-height: 38px;
+}
+
+.contact-info-box .contact-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: #fff;
+    background-color: #fea116;
+    line-height: 70px;
+    font-size: 30px;
+    transition: all 400ms ease-out 0s;
+}
+
+.contact-info-box h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info-box a {
+    color: #666565;
+}
+
+/* contact-map */
+
+.contact-map {
+    overflow: hidden;
+    height: 670px;
+    width: 100%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* contact-form */
+
+.contact-form {
+    padding-bottom: 130px;
+    position: relative;
+    margin-top: -110px;
+}
+
+.contact-form .contact-form-wrap {
+    margin-left: -115px;
+    margin-right: -115px;
+    padding: 80px 115px;
+    background-color: #f1f8ff;
+}
+
+.contact-form h2.form-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.contact-form h2.form-title::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: '';
+    background: #fea116;
+    height: 3px;
+    width: 100px;
+}
+
+.contact-form .input-wrap {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact-form .input-wrap input {
+    height: 80px;
+}
+
+.input-wrap i {
+    position: absolute;
+    color: #fea116;
+    background: transparent;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact-form .input-wrap textarea {
+    font-size: 16px;
+    color: #666565;
+}
+
+textarea {
+    height: 140px;
+    line-height: 28px;
+    padding-top: 15px;
+}
+
+.error {
+    color: red;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#errorname {
+    color: red;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#erroremail {
+    color: red;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#errorpassword {
+    color: red;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* sumbit */
+
+.contact-form .btn {
+    padding: 25px 80px;
+    font-size: 15px;
+    border-radius: 36px;
+    line-height: 0;
+}
